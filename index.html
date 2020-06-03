@@ -103,7 +103,7 @@
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #01020A">
-    <font size="7">We have been in love for</font>
+    <font size="5">We have been in love for</font>
     
     <!-- We fell in love -->
     <br/>
@@ -136,7 +136,7 @@
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
 			//想说的话
-            S.UI.simulate("#time|#countdown 2|咦？|怡|准备好了吗？|我是文|你现在的男朋友|未来的老公|Happy Birthday|I love U|");
+            S.UI.simulate("#time|#countdown 3|怡|Are U ready?|I'm Chao|Happy Birthday|...|I love U|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -298,7 +298,7 @@
                         S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'HacPai' : current));
                 }
                 // 修改想说的话的间隔时间
-            }, 4000, sequence.length);  
+            }, 3500, sequence.length);  
         }
 
         return {
@@ -438,15 +438,15 @@
 
 
     S.ShapeBuilder = (function () {
-        var gap = 13,
+        var gap = 9,
             shapeCanvas = document.createElement('canvas'),
             shapeContext = shapeCanvas.getContext('2d'),
-            fontSize = 500,
+            fontSize = 200,
             fontFamily = 'Avenir, Helvetica Neue, Helvetica, Arial, sans-serif';
 
         function fit() {
             shapeCanvas.width = Math.floor(window.innerWidth / gap) * gap;
-            shapeCanvas.height = Math.floor(window.innerHeight / gap) * gap;
+            shapeCanvas.height = Math.floor(window.innerHeight / gap) * gap ;
             shapeContext.fillStyle = 'red';
             shapeContext.textBaseline = 'middle';
             shapeContext.textAlign = 'center';
