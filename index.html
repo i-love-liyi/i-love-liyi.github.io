@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>致我怡</title>
+    <title>李怡小朋友，你好呀</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
@@ -99,11 +99,11 @@
 <body>
 <!--更改为你女朋友的头像-->
 <div class="cs">
-    <img src="http://wx1.sinaimg.cn/large/006gFOhdly1fr0hdrzlolj30b40b4dg7.jpg" id="logo">
+    <img src="yi.jpg" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
-<p class="text" style="color: #01020A">
-    <font size="5">We have been in love for</font>
+<p class="text" style="color: #d6484a">
+    <font size="5">❤️ We have been in love for ❤️</font>
     
     <!-- We fell in love -->
     <br/>
@@ -136,7 +136,12 @@
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
 			//想说的话
-            S.UI.simulate("#time|#countdown 3|怡|Are U ready?|I'm Chao|Happy Birthday|...|I love U|#time");
+            S.UI.simulate(
+                "#time|#countdown 3|怡|二零二零年|四月六日|还记得吗?|我们相爱的日子|" +
+                "从那一天起|你闯入我的生活|成为像空气一样|无比珍贵的礼物" +
+                "二零二零年|六月二十七日|还记得吗？|我老婆二十四岁的诞辰日|" +
+                "这一天，我想对她说|李怡|生日快乐|我爱你|你的出现|占满了我的视线|有你我很幸福|❤❤❤|❤我爱怡❤|The End~|#time"
+            );
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -298,7 +303,7 @@
                         S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'HacPai' : current));
                 }
                 // 修改想说的话的间隔时间
-            }, 3500, sequence.length);  
+            }, 4500, sequence.length);
         }
 
         return {
@@ -671,7 +676,7 @@
     S.init();
 </script>
 <audio autoplay="autoplay" loop="loop">
-    <source src="skin_to_skin.mp3" type="audio/mp3">
+    <source src="happy_birthday.mp3" type="audio/mp3">
 </audio>
 </body>
 </html>
