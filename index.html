@@ -99,7 +99,7 @@
 <body>
 <!--更改为你女朋友的头像-->
 <div class="cs">
-    <img src="yi.jpg" id="logo">
+    <img src="./pics/bidthday.png" id="logo" style="width:250px;height:250px;">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #d6484a">
@@ -137,10 +137,11 @@
             document.body.classList.add('body--ready');
 			//想说的话
             S.UI.simulate(
-                "#time|#countdown 3|怡|二零二零年|四月六日|还记得吗?|我们相爱的日子|" +
-                "从那一天起|你闯入我的生活|成为像空气一样|无比珍贵的礼物|" +
-                "二零二零年|六月二十七日|还记得吗？|我老婆二十四岁的诞辰日|" +
-                "这一天，我想对她说|李怡|生日快乐|我爱你|你的出现|占满了我的视线|有你我很幸福|❤❤❤|❤我爱怡❤|The End~|#time"
+<!--                "#time|#countdown 3|怡|二零二零年|四月六日|还记得吗?|我们相爱的日子|" +-->
+<!--                "从那一天起|你闯入我的生活|成为像空气一样|无比珍贵的礼物|" +-->
+<!--                "二零二零年|六月二十七日|还记得吗？|我老婆二十四岁的诞辰日|" +-->
+<!--                "这一天，我想对她说|李怡|生日快乐|我爱你|你的出现|占满了我的视线|有你我很幸福|❤❤❤|❤我爱怡❤|The End~|#time"-->
+                "#time|有美人兮，见之不忘|一日不见兮，思之如狂|#time"
             );
             S.Drawing.loop(function () {
                 S.Shape.render();
@@ -676,7 +677,7 @@
     S.init();
 </script>
 <audio autoplay="autoplay" loop="loop">
-    <source src="happy_birthday.mp3" type="audio/mp3">
+    <source src="./music/FirstKiss.mp3" type="audio/mp3">
 </audio>
 </body>
 </html>
